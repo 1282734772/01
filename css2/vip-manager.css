@@ -1,4 +1,11 @@
-﻿
+﻿body{
+    background-color: #eee;
+}
+.main{
+    width: 800px;
+    margin: 50px auto;
+
+}
 .main .item{
     text-align: center;
     font-size: 14px;
