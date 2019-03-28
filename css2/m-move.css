@@ -1,0 +1,224 @@
+.fl {
+  float: left;
+}
+.rgt {
+  float: right;
+}
+.none {
+  display: none !important;
+}
+.main-content .tit-tab li {
+  color: #fff;
+}
+.main-content .tit-tab li.active {
+  color: #35bda5;
+  font-weight: 700;
+}
+.main-content .tab-content{
+  display: none;
+}
+
+.main-content div.active {
+  display: block;
+}
+.tab-content .set {
+  padding: 10px 20px;
+}
+.tab-content .set label {
+  color: #999;
+  vertical-align: middle;
+}
+.tab-content1 .set .right button {
+  width: 110px;
+  height: 30px;
+  margin: 10px 20px;
+  background-color: #49bdf6;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+.tab-content1 .set .right .del {
+  background-color: #f64959;
+}
+.tab-content .infolist {
+  margin: 20px 10px;
+}
+.tab-content .infolist li {
+  margin: 20px 0;
+  padding: 0 30px;
+  text-align: center;
+}
+.tab-content1 .infolist > li > div {
+  width: 100%;
+  height: 150px;
+  padding: 32px 0;
+  margin: 0 auto;
+  background-color: #999;
+  color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.tab-content1 .infolist > li > div h4 {
+  height: 22px;
+  margin: 0 0 6px 0;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.tab-content1 .infolist > li > div p {
+  height: 18px;
+  line-height: 18px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* 影院设置tab */
+.tab-content2 {
+  min-width: 760px;
+}
+.tab-content2 .infolist li {
+  overflow: hidden;
+  /* margin-top: 20px; */
+  margin-top: 24px;
+  text-align: left;
+}
+.tab-content2 .infolist li > span {
+  float: left;
+  height: 30px;
+  margin: 0 10px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.tab-content2 .infolist li > .remind {
+  color: #999;
+}
+.tab-content2 .infolist li > [type="text"] {
+  float: left;
+  width: 200px;
+  height: 28px;
+  padding-left: 10px;
+  outline: 0;
+  border: 0;
+  background-color: #eee;
+  vertical-align: middle;
+}
+.tab-content2 .infolist .posterinfo {
+  width: 561px;
+}
+.tab-content2 .infolist .custombtn {
+  display: block;
+  width: 90px;
+  height: 28px;
+  background-color: #33baf5;
+  text-align: center;
+  color: #fff;
+  line-height: 28px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.tab-content2 .infolist input {
+  border-radius: 4px;
+}
+.tab-content2 .posterinfo .imglist li {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  width: 120px;
+  height: 70px;
+  margin: 18px;
+  margin-left: 0;
+  padding: 0;
+}
+.tab-content2 .posterinfo .imglist img {
+  width: 120px;
+  height: 70px;
+}
+.tab-content2 .posterinfo .imglist li i {
+  position: absolute;
+  right: 4px;
+  top: 0px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+.tab-content2 .infolist .confirm {
+  border: 0;
+}
+.tab-content3 .set {
+  height: 40px;
+}
+.tab-content3 .set label > span {
+  color: #f00;
+}
+.tab-content3 {
+  min-width: 760px;
+}
+.tab-content3 .infolist li {
+  overflow: hidden;
+  /* margin-top: 20px; */
+  margin-top: 0;
+  text-align: left;
+}
+.tab-content3 .infolist li > span {
+  float: left;
+  height: 30px;
+  margin: 0 10px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.tab-content3 .infolist li > .remind {
+  color: #999;
+}
+.tab-content3 .infolist li > [type="text"] {
+  float: left;
+  width: 200px;
+  height: 28px;
+  padding-left: 10px;
+  outline: 0;
+  border: 0;
+  background-color: #eee;
+  vertical-align: middle;
+}
+.tab-content3 .infolist .posterinfo {
+  width: 561px;
+}
+.tab-content3 .infolist .custombtn {
+  display: block;
+  width: 90px;
+  height: 28px;
+  background-color: #33baf5;
+  text-align: center;
+  color: #fff;
+  line-height: 28px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.tab-content3 .infolist input {
+  border-radius: 4px;
+}
+.tab-content3 .posterinfo .imglist li {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  width: 120px;
+  height: 70px;
+  margin: 18px;
+  margin-left: 0;
+  padding: 0;
+}
+.tab-content3 .posterinfo .imglist img {
+  width: 120px;
+  height: 70px;
+}
+.tab-content3 .posterinfo .imglist li i {
+  position: absolute;
+  right: 4px;
+  top: 0px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+.tab-content3 .infolist .confirm {
+  border: 0;
+}

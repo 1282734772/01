@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>卖品管理</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fonticon/iconfont.css">
+    <link rel="stylesheet" href="../css2/manager.css">
+    <link rel="stylesheet" href="../css2/common-form.css">
+    <link rel="stylesheet" href="../css2/m-move.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 slidebar navbar-fixed-top">
+                <div class="tit">
+                    <h1>网站标题</h1>
+                </div>
+                <ul class="list-group">
+                    <li>
+                        <a href="./m-move.html">
+                            <i class="circle"></i>
+                            <span class="txt">影厅管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./m-promotion.html">
+                            <i class="circle"></i>
+                            <span>促销管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./m-staff.html">
+                            <i class="circle"></i>
+                            <span>员工管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="circle"></i>
+                            <span>会员管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"  class="active">
+                            <i class="circle"></i>
+                            <span>产品管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="circle"></i>
+                            <span>Post终端</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="circle"></i>
+                            <span>财务统计</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="circle"></i>
+                            <span>微信后台</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <div class="main-nav">
+                    <div class="navbar-header">
+                        <h2 class="navbar-brand">标题2</h2>
+                    </div>
+                    <div class="nav navbar-right infonav">
+                        <a href="#">
+                            <img src="../img/user.jpg" width="30" height="30" alt="头像图片" title="头像" class="user-photo">
+                            <span>用户</span>
+                        </a>
+                        <a href="">|</a>
+                        <a href="#">常见问题</a>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="tit-tab">
+                        <ul>
+                            <li class="active">卖品列表</li>
+                            <li>实品库存</li>
+                            <li>实品订单</li>
+                        </ul>
+                    </div>
+                    <!-- tab选项卡1  影厅设置-->
+                    <div class="tab-content active tab-content1 col-operation" >
+                        <div id="filterinfo">
+                            <div>
+                                <button>添加实品</button>
+                                <button>添加套餐</button>
+                                <button>添加品类</button>
+                            </div>
+                            <ul class="control clearfix">
+                                <li>筛选:</li>
+                                <li>
+                                    <div class="select">实品类型</div>
+                                    <ul class="option none">
+                                        <li>选项</li>
+                                        <li>选项</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="select">实品状态</div>
+                                    <ul class="option none">
+                                        <li>选项</li>
+                                        <li>选项</li>
+                                    </ul>
+                                </li>
+                                <li>至<input type="text"></li>
+                                <li>
+                                    <button class="search">搜索</button>
+                                </li>
+                            </ul>
+                            <div class="right fr">
+                                <button>上架</button>
+                                <button>下架</button>
+                            </div>
+                        </div>
+                        <table id="manage-data">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"> 全选</th>
+                                    <th>名称</th>
+                                    <th>品类</th>
+                                    <th>销售价格(元/单位)</th>
+                                    <th>无限供应</th>
+                                    <th>热卖推荐</th>
+                                    <th>销售状态</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbo1">
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>爆米花</td>
+                                    <td>零食</td>
+                                    <td>100元/桶</td>
+                                    <td>是</td>
+                                    <td>是</td>
+                                    <td>销售中</td>
+                                    <td class="operation">编辑下架</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>爆米花</td>
+                                    <td>零食</td>
+                                    <td>100元/桶</td>
+                                    <td>是</td>
+                                    <td>是</td>
+                                    <td>销售中</td>
+                                    <td class="operation">编辑下架</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>爆米花</td>
+                                    <td>零食</td>
+                                    <td>100元/桶</td>
+                                    <td>是</td>
+                                    <td>是</td>
+                                    <td>销售中</td>
+                                    <td class="operation">编辑下架</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>爆米花</td>
+                                    <td>零食</td>
+                                    <td>100元/桶</td>
+                                    <td>是</td>
+                                    <td>是</td>
+                                    <td>销售中</td>
+                                    <td class="operation">编辑下架</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>爆米花</td>
+                                    <td>零食</td>
+                                    <td>100元/桶</td>
+                                    <td>是</td>
+                                    <td>是</td>
+                                    <td>销售中</td>
+                                    <td class="operation">编辑下架</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-content  tab-content2 col-operation">
+                        <div id="filterinfo">
+                            <ul class="control clearfix">
+                                <li>筛选:</li>
+                                <li>
+                                    <div class="select">实品类型</div>
+                                    <ul class="option none">
+                                        <li>选项</li>
+                                        <li>选项</li>
+                                    </ul>
+                                </li>
+                                <li>至<input type="text"></li>
+                                <li>
+                                    <button class="search">搜索</button>
+                                </li>
+                            </ul>
+                            <div class="right fr">
+                                <button>库存历史</button>
+                            </div>
+                        </div>
+                        <table id="manage-data">
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>品类</th>
+                                    <th>销售价格(元/单位)</th>
+                                    <th>无限供应</th>
+                                    <th>当前库存</th>
+                                    <th>最低库存</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbo2">
+                                <tr>
+                                    <td>爆米花</td>
+                                    <td>零食</td>
+                                    <td>100元/桶</td>
+                                    <td>是</td>
+                                    <td>4</td>
+                                    <td>400</td>
+                                    <td class="operation">
+                                        <span>进货</span>
+                                        <span>速度</span>
+                                        <span>损耗</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>爆米花</td>
+                                    <td>零食</td>
+                                    <td>100元/桶</td>
+                                    <td>是</td>
+                                    <td>4</td>
+                                    <td>400</td>
+                                    <td class="operation">
+                                        <span>进货</span>
+                                        <span>速度</span>
+                                        <span>损耗</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>爆米花</td>
+                                    <td>零食</td>
+                                    <td>100元/桶</td>
+                                    <td>是</td>
+                                    <td>4</td>
+                                    <td>400</td>
+                                    <td class="operation">
+                                        <span>进货</span>
+                                        <span>速度</span>
+                                        <span>损耗</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-content   tab-content3 col-operation">
+                        <div id="filterinfo">
+                            <ul class="control clearfix">
+                                <li>筛选:</li>
+                                <li>
+                                    <div class="select">实品类型</div>
+                                    <ul class="option none">
+                                        <li>选项</li>
+                                        <li>选项</li>
+                                    </ul>
+                                </li>
+                                <li>至<input type="text"></li>
+                                <li>
+                                    <button class="search">搜索</button>
+                                </li>
+                            </ul>
+                            <div class="right fr">
+                                <button>今日订单</button>
+                                <button>所有订单</button>
+                            </div>
+                        </div>
+                        <table id="manage-data">
+                            <thead>
+                                <tr>
+                                    <th>订单号</th>
+                                    <th>时间</th>
+                                    <th>订单内容</th>
+                                    <th>收银方式</th>
+                                    <th>金额</th>
+                                    <th>收银员</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody  class="tbo3">
+                                <tr>
+                                    <td>爆米花</td>
+                                    <td>零食</td>
+                                    <td>100元/桶</td>
+                                    <td>是</td>
+                                    <td>4</td>
+                                    <td>400</td>
+                                    <td class="operation">
+                                        详情
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>爆米花</td>
+                                    <td>零食</td>
+                                    <td>100元/桶</td>
+                                    <td>是</td>
+                                    <td>4</td>
+                                    <td>400</td>
+                                    <td class="operation">
+                                        详情
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/manager.js"></script>
+    <script>
+        var tabLi = $(".main-content .tit-tab li"),
+            tabContent = $(".main-content .tab-content"),
+            prevIndex = 0;
+        tabLi.on("click", function () {
+            tabLi.eq(prevIndex).removeClass("active");
+            tabContent.eq(prevIndex).removeClass("active");
+            prevIndex = $(this).index();
+            tabContent.eq(prevIndex).addClass("active");
+            $(this).addClass("active");
+            $(this).addClass("active");
+        });
+    </script>
+    
+    
+      <!--请求数据-->
+  <script type="text/javascript">
+         $(function(){
+			 
+			 
+			 $.ajax({
+			   url:"http://180.76.166.155:8081/private-cinema/commodity/findAll",
+			   type:"GET",
+			   
+			   success: function(data1){
+				   
+				   var data=data1.data;
+				    var n="";
+				   for(var i=0;i<data.length;i++){
+					  var hot="";
+					   if(data[i].hot==1){
+						   hot="是";
+						   
+					   }else{
+						   sex="否";	   
+						}
+						var setmeal="";
+					   if(data[i].setmeal==1){
+						   setmeal="是";
+						   
+					   }else{
+						   setmeal="否";	   
+						}
+						 
+						var sale="";
+					   if(data[i].salestate==1){
+						   sale="销售中";
+						}else{
+							 sale="暂停销售";
+						}
+ 
+					n=n+"<tr><td><input type='checkbox'></td><td>"+data[i].name+"</td><td>"+data[i].typename+"</td><td>"+data[i].price+"元/桶</td><td>"+setmeal+"</td><td>"+hot+"</td><td>"+sale+"</td><td class='operation'>编辑下架</td></tr>";
+					   
+					   	
+					   }
+					    $(".tbo1").html(n);;
+					  
+			   }
+			   	 
+				 })
+				 //显示库存
+				 
+				  $.ajax({
+			   url:"http://180.76.166.155:8081/private-cinema/commodity/stock/findAll",
+			   type:"GET",
+			   
+			   success: function(data1){
+				     var n="";
+				   var data=data1.data;
+				   
+				   for(var i=0;i<data.length;i++){
+					  
+						 
+						 
+						var infinite="";
+					   if(data[i].infinite==false){
+						   infinite="否";
+						}else{
+							 infinite="是";
+						}
+						
+					 
+								
+ 
+					n=n+"<tr><td>"+data[i].name+"</td><td>"+data[i].type+"</td><td>"+data[i].price+"元/桶</td><td>"+infinite+"</td><td>"+data[i].num+"</td><td>"+data[i].minnum+"</td> <td class='operation'> <span>进货</span><span>速度</span> <span>损耗</span> </td></tr>";
+					   
+					   	
+					   }
+					  $(".tbo2").html(n);;
+					
+			   }
+			   	 
+				 })
+
+
+
+
+
+
+			 })
+			  
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="../js/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>潭州乌拉</title>
+    <style>
+        *{margin:0;padding:0;}
+        li{list-style:none;}
+        a{text-decoration: none;}
+    </style>
+    <link rel="stylesheet" href="../css2/common-form.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="tit-tab clearfix">
+            <button class="add">添加员工</button>
+        </div>
+        <table id="staff-data">
+            <thead>
+                <tr>
+                    <th>用户名</th>
+                    <th>员工姓名</th>
+                    <th>性别</th>
+                    <th>最后登录时间</th>
+                    <th>手机号</th>
+                    <th>工作安排</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>小舞</td>
+                    <td>node</td>
+                    <td>女</td>
+                    <td>2018-11-13 21:20:00</td>
+                    <td>121524689123</td>
+                    <td>店长</td>
+                    <td>
+                        <button class="iconfont icon-bianji edit"></button>
+                        <button class="iconfont icon-shanchu delete"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>沙罗</td>
+                    <td>angular</td>
+                    <td>女</td>
+                    <td>2018-11-13 21:20:00</td>
+                    <td>121524689123</td>
+                    <td>店长</td>
+                    <td>
+                        <button class="iconfont icon-bianji edit"></button>
+                        <button class="iconfont icon-shanchu delete"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>小舞</td>
+                    <td>node</td>
+                    <td>女</td>
+                    <td>2018-11-13 21:20:00</td>
+                    <td>121524689123</td>
+                    <td>店长</td>
+                    <td>
+                        <button class="iconfont icon-bianji edit"></button>
+                        <button class="iconfont icon-shanchu delete"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>沙罗</td>
+                    <td>angular</td>
+                    <td>女</td>
+                    <td>2018-11-13 21:20:00</td>
+                    <td>121524689123</td>
+                    <td>店长</td>
+                    <td>
+                        <button class="iconfont icon-bianji edit"></button>
+                        <button class="iconfont icon-shanchu delete"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>小舞</td>
+                    <td>node</td>
+                    <td>女</td>
+                    <td>2018-11-13 21:20:00</td>
+                    <td>121524689123</td>
+                    <td>店长</td>
+                    <td>
+                        <button class="iconfont icon-bianji edit"></button>
+                        <button class="iconfont icon-shanchu delete"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>沙罗</td>
+                    <td>angular</td>
+                    <td>女</td>
+                    <td>2018-11-13 21:20:00</td>
+                    <td>121524689123</td>
+                    <td>店长</td>
+                    <td>
+                        <button class="iconfont icon-bianji edit"></button>
+                        <button class="iconfont icon-shanchu delete"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  
+  <!--请求数据-->
+  <script type="text/javascript">
+         $(function(){
+			 var args={pageNum:1,pageSize:10};
+			  
+			 $.ajax({
+			   url:"http://180.76.166.155:8081/private-cinema/staff/findAll",
+			   type:"GET",
+			   data:args,
+			   success: function(data1){
+				   
+				   var data=data1.data;
+				   var n="";
+				   for(var i=0;i<data.length;i++){
+					  var sex="";
+					   if(data[i].sex==1){
+						   sex="男";
+						   
+					   }else{
+						   sex="女";	   
+						}
+						//alert(sex);
+						var job="";
+					   if(data[i].job==0){
+						   job="店长"
+						   }else{
+							   
+						}
+						 
+					
+					n=n+"<tr><td>"+data[i].username+"</td><td>"+data[i].fullname+"</td><td>"+sex+"</td><td>"+data[i].lasttime+"</td><td>"+data[i].phone+"</td><td>"+job+"</td><td> <button class='iconfont icon-bianji edit'></button><button class='iconfont icon-shanchu delete'></button></td></tr>";
+					   
+					   	
+					   }
+					   $("tbody").html(n);
+			   }
+			   	 
+				 })
+			 })
+			  
+  </script>
+  
+</body>
+</html>
+
+

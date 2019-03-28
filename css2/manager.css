@@ -1,0 +1,180 @@
+/* @pos : position;
+@pos-ab : absolute;
+@pos-re: relative; */
+body {
+  background-color: #eee;
+}
+button {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+}
+li,
+ol {
+  list-style: none;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+[type="text"]{
+  border: 0;
+}
+input{
+  outline: 0;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.container-fluid{
+  padding: 0;
+}
+
+.slidebar {
+  display: none;
+}
+.slidebar .tit {
+  height: 70px;
+  background-color: #33b9f5;
+}
+.slidebar .tit h1 {
+  margin: 0;
+}
+.slidebar .list-group > li {
+  height: 50px;
+  line-height: 50px;
+}
+.slidebar .list-group > li > a {
+  display: block;
+  position: relative;
+  padding: 0 0 0 35px;
+  color: #82858b;
+}
+.slidebar .list-group > li > a:hover {
+  background-color: #425066;
+  color: #e2e1e1;
+}
+.slidebar .list-group > li > .active {
+  background-color: #425066;
+  color: #e2e1e1;
+}
+.slidebar .list-group > li > a > .circle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 5px;
+  height: 5px;
+  margin: auto;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.slidebar .list-group > li > a > .text {
+  vertical-align: middle;
+}
+.main {
+  padding: 0;
+}
+.vipmanager h1{
+  width: 200px;
+  margin: 0;
+  background-color: rgb(76, 201, 240);
+  font-size: 28px;
+}
+.vipmanager p{
+  width: 100px;
+  margin: 0;
+  font-size: 26px;
+}
+.vipmanager .tit{
+  float: left;
+  height: 70px;
+  padding: 0;
+  line-height: 70px;
+  text-align: center;
+}
+.main-nav {
+  overflow: hidden;
+  background-color: #fff;
+}
+.main-nav .navbar-brand {
+  height: 70px;
+  margin: 0 50px;
+  padding: 0;
+  line-height: 70px;
+}
+.infonav {
+  display: none;
+}
+.infonav > a {
+  float: left;
+  height: 70px;
+  padding: 0 30px 0 0;
+  line-height: 70px;
+  color: #333;
+  font-size: 14px;
+}
+.infonav > a span {
+  padding-left: 10px;
+}
+.infonav .user-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.main-content {
+  overflow: hidden;
+  width: 92%;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 4px;
+}
+.main-content .tit-tab {
+  overflow: hidden;
+  height: 50px;
+  background-color: #35bda5;
+}
+.main-content .tit-tab li {
+  float: left;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.main-content .tit-tab li.active {
+  background-color: #fff;
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+  .slidebar {
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+    background-color: #2b3343;
+  }
+  .infonav {
+    display: block;
+    overflow: hidden;
+  }
+}

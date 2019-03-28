@@ -1,0 +1,164 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+body{
+    font-family:'Source Han Sans','Hiragino Sans GB',STXihei,"Microsoft YaHei",SimSun,Heiti,sans-serif;
+	font-size: 12px;
+}
+img{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+[type="text"]{
+    border: 0;
+}
+input{
+    outline: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+.lf {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.main-content {
+  min-width: 760px;
+}
+/* 筛选区域 */
+#filterinfo{
+  margin: 10px 20px;
+}
+#filterinfo .control{
+  float: left;
+  margin: 20px 0;
+}
+#filterinfo .control > li{
+  float: left;
+  margin: 0 4px;
+  line-height: 30px;
+  font-size: 14px;
+}
+#filterinfo .control > li input{
+  border: 0;
+}
+#filterinfo .control > li input,
+#filterinfo .control > li .select{
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  margin: 0 4px;
+  padding-left: 6px;
+  background-color: #eee;
+  color: #999;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+#filterinfo .control > li .select > i{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  color: #999;
+}
+#filterinfo button{
+  width: 80px;
+  height: 30px;
+  margin: 0 10px;
+  background-color: #35bda5;
+  color: #fff;
+  border-radius: 4px;
+}
+#filterinfo .right{
+  margin: 20px 0;
+}
+
+.main-content .tit-tab h3 {
+  float: left;
+  padding-left: 15px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+.main-content .tit-tab .add {
+  float: right;
+  width: 100px;
+  height: 32px;
+  margin: 9px 14px 0 0;
+  vertical-align: middle;
+  background-color: #fff;
+  color: #35bda5;
+  border-radius: 4px;
+}
+.tab-content table .imglist{
+  padding-left: 10px;
+  text-align: left !important;
+}
+.tab-content table .imglist img{
+  width: 50px;
+  vertical-align: top;
+  margin:0 6px;
+}
+.main-content #manage-data , #manage-data-disable{
+  min-width: 960px;
+  width: 100%;
+  background-color: #fff;
+}
+#manage-data th , #manage-data-disable th{
+  color: #35bda5;
+}
+#manage-data td,
+#manage-data th,
+#manage-data-disable td,
+#manage-data-disable th{
+  overflow: hidden;
+  height: 60px;
+  line-height: 30px;
+  border: 1px solid #eee;
+  text-align: center;
+  vertical-align: middle;
+}
+#manage-data td button ,
+#manage-data-disable td button {
+  background-color: #fff;
+}
+#manage-data td button.delete,
+#manage-data-disable td button.delete {
+  margin-left: 10px;
+  color: #f00;
+}
+.col-operation .operation{
+  color: #35bda5;
+  cursor: pointer;
+}
+.col-operation .operation span{
+  cursor: pointer;
+}
+
